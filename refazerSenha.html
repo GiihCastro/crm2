@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./refazerSenha.css">
+    <title>Recuperar Senha</title>
+    <script src="./scriptreset.js"></script>
+</head>
+<body>
+    <main id="reset-password-page">
+        <img src="/registro-img/banner1.png" alt="" id="banner-img">
+        <div id="logo-container">
+            <img src="/registro-img/Logo.png" alt="logo" id="logo-img">
+        </div>
+        <section class="content-container">
+
+            <div id="title-section">
+                <h1><strong>RESETE SUA SENHA</strong></h1>
+                <p>Como você gostaria que fosse sua nova senha?</p>
+            </div>
+
+            <div id="info-section">
+                <label for="new-password">Senha</label>
+                <input type="password" id="new-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,15}$" 
+                    title="A senha deve ter no máximo 15 caracteres, incluindo pelo menos uma letra maiúscula, 
+                    uma letra minúscula, um número e um caractere especial (@$!%*?&)." required>
+
+                <label for="confirm-new-password">Confirmar Senha</label>
+                <input type="password" id="confirm-new-password">
+
+                <button id="save-new-password-button"><h2><strong>Salvar</strong></h2></button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scriptreset.js"></script>
+</body>
+</html>

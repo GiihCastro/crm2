@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./recuperarSenha.css">
+    <title>Recuperar Senha</title>
+    <script src="./scriptforget.js"></script>
+</head>
+<body>
+    <main id="reset-password-page">
+        <img src="/registro-img/banner1.png" alt="" id="banner-img">
+        <div id="logo-container">
+            <img src="/registro-img/Logo.png" alt="logo" id="logo-img">
+        </div>
+        <section class="content-container">
+
+            <div id="title-section">
+                <h1><strong>ESQUECEU <br> SUA SENHA?</strong></h1>
+                <p>Insira seu e-mail abaixo e enviaremos um link para redefinir sua senha.</p>
+            </div>
+
+            <div id="info-section">
+                <label for="recovery-email"></label>
+                <input placeholder="E-mail Cadastrado" type="email" id="recovery-email" class="recovery-email-input" pattern=".+@example\.com" size="30" required/>
+                <button id="send-email-button" onclick="recoverPass()">Redefinir Senha</button>
+            </div>
+
+            <div id="hidden-box" style="display: none;">
+                <button id="done-button" onclick="doneButton()">Confirmar</button>
+                <div id="header">
+                    <h2><strong>CONFIRMAR ENDEREÇO DE E-MAIL</strong></h2>
+                    <p>Enviamos um e-mail de confirmação para:</p>
+                    <h3 id="recovery-email-input"></h3>
+                    <p>Verifique seu e-mail e clique no link de confirmação para continuar.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./scriptforget.js"></script>
+</body>
+</html>

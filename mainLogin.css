@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --purple: #6F5FE7;
+    --grey: #BABABA;
+    --font: 'Inter', Arial, sans-serif;
+    --bg: #131318;
+    --hover-bt: #564ab8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#banner-img {
+    height: 200px;
+}
+
+#logo-img {
+    right: 24px;
+    position: absolute;
+    top: 20%;
+}
+
+main {
+    width: 375px;
+    height: 867px;
+    margin: auto;
+    background-color: var(--bg);
+    position: relative;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: 900;
+    margin-top: 16px;
+}
+
+h2 {
+    font-size: 18px;
+    color: var(--grey);
+    font-weight: 400;
+}
+
+p {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+#main-content {
+    padding: 0 24px;
+}
+
+input {
+    border-radius: 10px;
+    height: 50px;
+    background-color: var(--bg);
+    border: 1px solid #4F4F4F;
+    margin: 15px 0;
+    width: 100%;
+    color: white;
+}
+
+input::placeholder {
+    color: #A1A1A3;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+#remember {
+    background-color: var(--purple);
+    width: 20px;
+}
+
+#auxiliary-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+a {
+    color: var(--grey);
+}
+
+button {
+    height: 50px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#login-button {
+    background-color: #6F5FE7;
+    color: white;
+}
+
+#login-button:hover {
+    background-color: var(--hover-bt);
+}
+
+#register-button {
+    margin-top: 16px;
+    background-color: var(--bg);
+    color: var(--purple);
+    border: 2px solid;
+}
+
+#register-button:hover {
+    background-color: black;
+}

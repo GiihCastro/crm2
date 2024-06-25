@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mainRegistro.css">
+    <title>mainRegistro</title>
+</head>
+<body>
+    <main id="tela-login">
+        <section class="container">
+            <tela-cadastro>
+                <h1>MEMBERSHIP INFO</h1>
+                <div id="formulario">
+                    <div id="label-principal">
+                        <input placeholder="Primeiro Nome" type="text" id="primeiro-nome" pattern="[A-Za-z]+" size="15">
+                        <label></label>
+                        <input placeholder="Último Nome" type="text" id="ultimo-nome" pattern="[A-Za-z]+" size="15">
+                        <label></label>
+                        <input placeholder="E-mail" type="email" id="email" pattern=".+@example\.com" size="30" required />
+                        <label for="email"></label>
+                        <input type="tel" id="telefone" pattern="\(\+\d{2}\) \d{2} \d \d{4} - \d{4}" 
+                        placeholder="(+55)" title="Formato esperado: (+XX) XX X XXXX - XXXX">
+                        <label for="telefone"></label>
+                        <input type="text" placeholder="Senha" id="senha-cadastro" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{1,15}$" 
+                        title="A senha deve ter no máximo 15 caracteres, incluindo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial (@$!%*?&)." required>
+                        <label for="senha-cadastro"></label>
+                    </div>
+                    <div id="label-final">
+                        <input placeholder="Confirmar senha" type="text" id="confirmar-senha">
+                        <label for="confirmar-senha"></label>
+                        <button id="confirmar-cadastro">Confirmar</button>
+                    </div>
+                </div>
+                <footer> 
+                    <p>Entre utilizando outra conta</p> 
+                    <div id="icons">
+                        <div class="login-direto"><img src="./registro-img/Apple Auth (1).png" alt="Apple"></div>
+                        <div class="login-direto"><img src="/registro-img/Facebook Auth.png" alt="Facebook"></div>
+                        <div class="login-direto"><img src="../registro-img/search.png" alt="Google"></div>
+                    </div>
+                </footer>
+            </tela-cadastro>
+        </section>
+    </main>
+    <script src=""></script>
+</body>
+</html>

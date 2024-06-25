@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/mainLogin.css">
+    <title>CRM Web App</title>
+</head>
+<body>
+    <main id="login-page">
+        <img src="./registro-img/banner1.png" alt="Banner" id="banner-img">
+        <div id="logo-container">
+            <img src="./registro-img/Logo.png" alt="Logo" id="logo-img">
+        </div>
+        <section class="content-container">
+            <div id="page-header"></div>
+            <div id="main-content">
+                <div id="main-title">
+                    <div id="title-text">
+                        <h1><strong>GIVY CRM <br> WEB APP</strong></h1>
+                        <h2>@Givy</h2>
+                    </div>
+                    <p>The CRM platform that is simple to set up and easy to use. Givy lets you handle all your customers, campaign, and coupon in one place.</p>
+                </div>
+                <div id="form-section">
+                    <div id="login-details">
+                        <input type="text" id="username" placeholder="Usuário">
+                        <label for="username"></label>
+                        <input type="password" id="password" placeholder="Senha">
+                        <label for="password"></label>
+                    </div>
+                    <div id="auxiliary-buttons">
+                        <div id="remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember"><p>Lembrar</p></label>
+                        </div>
+                        <p><a href="/Esquecer Senha/esquecer_senha.html" id="forgot-password">Esqueci minha senha</a></p>
+                    </div>
+                    <div id="primary-buttons">
+                        <a href="/Home/home.html"><button class="large-buttons" id="login-button">Entrar</button></a>
+                        <a href="/Cadastro/cadastro.html"><button class="large-buttons" id="register-button">Cadastrar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div id="cookie-consent" style="display: none">
+                <div id="cookie-banner">
+                    <div id="cookie-info">
+                        <h3><strong>We use cookies</strong></h3>
+                        <h4>This website uses cookies to enhance your browsing experience, show personalized content and targeted ads, analyze website traffic, and understand where visitors are coming from. Manage your preferences by clicking "Change Preferences."</h4>
+                    </div>
+                    <div id="cookie-buttons">
+                        <div class="accept-close" id="accept-cookies">Accept All</div>
+                        <a id="preferences-open">CHANGE PREFERENCES</a>
+                    </div>
+                </div>
+                <div id="cookie-preferences" style="display: none">
+                    <div id="preferences-header">
+                        <h2><strong>Privacy Preferences</strong></h2>
+                        <button id="close-preferences"></button>
+                    </div>
+                    <div class="accept-close" id="accept-preferences">Accept All</div>
+                    <div class="cookie-category">
+                        <div class="category-header">
+                            <h3><strong>Necessary</strong></h3>
+                            <button class="toggle"></button>
+                        </div>
+                        <p>Necessary cookies are essential for website functionality. They are enabled by default and cannot be disabled.</p>
+                    </div>
+                    <div class="cookie-category">
+                        <div class="category-header">
+                            <h3><strong>Analytics</strong></h3>
+                            <button class="toggle"></button>
+                        </div>
+                        <p>Analytics cookies help us understand how visitors interact with the website, improving user experience.</p>
+                    </div>
+                    <div class="cookie-category">
+                        <div class="category-header">
+                            <h3><strong>Marketing</strong></h3>
+                            <button class="toggle"></button>
+                        </div>
+                        <p>Marketing cookies track visitors to display relevant advertisements, making them more valuable for publishers and third-party advertisers.</p>
+                    </div>
+                    <button class="confirm-button">Confirm my Choices</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=""></script>
+</body>
+</html>
